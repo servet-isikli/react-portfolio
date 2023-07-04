@@ -7,7 +7,7 @@ function Header() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Servet Isikli</Navbar.Brand>
+          <Navbar.Brand href="#home">React-Portfolio</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
