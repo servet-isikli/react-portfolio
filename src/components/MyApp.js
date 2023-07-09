@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MyButton from './MyButton';
 
 const MyApp = () => {
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+      setCount(count + 1);
+    }
   return (
-    <div>MyApp</div>
-  )
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
 }
 
 export default MyApp
